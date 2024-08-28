@@ -1,4 +1,4 @@
-CS372 Include
+CS414 Include
 ==================================
 This folder is for the include files for programs and classes required
 for the class.  Many of the classes you will write this class are

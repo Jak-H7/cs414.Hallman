@@ -1,4 +1,4 @@
-CS372 Documents
+CS414 Documents
 ==================================
 This folder is for any documents you need to produce for the class.
 For example, some assignments will ask your either theory or
