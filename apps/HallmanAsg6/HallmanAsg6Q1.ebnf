@@ -1,0 +1,24 @@
+/*
+*File: HallmanAsg6Q1.ebnf
+*Author: Jackson Hallman
+*Student Num: 00102945
+*Email: jhallma5@my.athens.edu
+*/
+
+ShellCommand ::= ( "ls" [ Path ] )
+               | ( "cd" [ FolderPath ] )
+               | ( "cat" Filename )
+               | ( "print" Filename )
+               | ( "exec" Filename );
+
+Path          ::= RootFolder | FolderPath;
+
+FolderPath    ::= RootFolder ( FolderName ( Separator FolderName )* )?;
+
+FolderName    ::= [a-zA-Z0-9]{1,8};
+
+Filename      ::= [a-zA-Z0-9]{1,8} "." [a-zA-Z0-9]{3};
+
+RootFolder    ::= "\\";
+
+Separator     ::= "\\";
