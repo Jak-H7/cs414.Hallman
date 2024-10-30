@@ -8,8 +8,8 @@
 (define atom1 'apple)
 (define atom2 'banana)
 (define atom3 'cherry)
-(define atom4 'date)
-(define atom5 'elderberry)
+(define atom4 'grapes)
+(define atom5 'kiwi)
 
 (define list1 `(,atom1))
 (define list2 `(,atom2))
@@ -78,4 +78,3 @@
                     (dog cat mouse)
                     (one two three)))
 (define result-seconds (seconds test-lats)) ;; Expected result: '(banana cat two)
-
