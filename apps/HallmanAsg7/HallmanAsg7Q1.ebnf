@@ -1,0 +1,32 @@
+/*
+*File: HallmanAsg7Q1.ebnf
+*Author: Jackson Hallman
+*Student Num: 00102945
+*Email: jhallma5@my.athens.edu
+*/
+
+ShellCommand   ::= ( "ls" [ Path ] )
+                 | ( "cd" [ FolderPath ] )
+                 | ( "cat" FileArgument )
+                 | ( "print" FileArgument )
+                 | ( "exec" FileArgument )
+                 | ( "set" Variable "=" Value )
+                 | ( "echo" Variable );
+
+Path           ::= RootFolder | FolderPath;
+
+FolderPath     ::= RootFolder ( FolderName ( Separator FolderName )* )?;
+
+FolderName     ::= [a-zA-Z0-9]{1,8};
+
+FileArgument   ::= Filename | Variable;
+
+Filename       ::= [a-zA-Z0-9]{1,8} "." [a-zA-Z0-9]{3};
+
+RootFolder     ::= "\\";
+
+Separator      ::= "\\";
+
+Variable       ::= "$" [a-zA-Z0-9]+;
+
+Value          ::= "\"" [^"]* "\"";  // Represents a string enclosed in double quotes
