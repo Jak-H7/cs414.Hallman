@@ -10,6 +10,7 @@
 #include <unordered_map>
 #include <stdexcept>
 
+
 enum TokenType {
     LS, CD, CAT, PRINT, EXEC, SET, ECHO,
     VARIABLE, VALUE, FILENAME, FOLDERNAME,
